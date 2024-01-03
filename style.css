@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Playfair+Display&display=swap");
+:root {
+  --main-bg-color: #2874f0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+header {
+  height: 65px;
+  background: var(--main-bg-color);
+  font-family: "Playfair Display", serif;
+}
+nav {
+  display: flex;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.logo img {
+  width: 88px;
+  padding: 5px 25px 0px;
+}
+.explore {
+  width: 88px;
+  display: flex;
+  white-space: nowrap;
+  padding: 0 25px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.explore a {
+  display: flex;
+  color: white;
+}
+.explore p {
+  margin: 0;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 550;
+  color: white;
+}
+.explore img {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+}
+.plus {
+  color: #ffe500;
+}
+nav ul {
+  height: 71px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 23px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  font-weight: bolder;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  min-width: 300px;
+  width: 450px;
+  height: 35px;
+  background-color: white;
+  margin: 20px 16px;
+  border-radius: 2px;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.search i {
+  color: var(--main-bg-color);
+}
+.search input {
+  width: 90%;
+  border: none;
+  outline: none;
+}
+
+.log-in {
+  font-family: "Playfair Display", serif;
+  margin-top: 1.7%;
+  color: white;
+}
+.seller {
+  color: white;
+  margin: 26px 20px;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: 550;
+}
+.more {
+  color: white;
+  margin: 26px 20px;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: 550;
+  cursor: pointer;
+}
+.icon_more {
+  font-size: 10px;
+  transition: transform 0.5s;
+}
+.more:hover .icon_more {
+  transform: rotate(-180deg);
+}
+.card {
+  display: flex;
+  color: white;
+  margin: 26px 20px;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: 550;
+  cursor: pointer;
+}
+.card p {
+  padding: 0px 6px;
+}
+.card i {
+  margin: 5px;
+}
+
+/* top product */
+
+.topProduct {
+  background-color: white;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.topProduct-nav {
+  margin-top: 1.1%;
+  margin-left: 6%;
+  cursor: pointer;
+}
+.topProduct-nav:hover p {
+  color: #2874f0;
+}
+.topProduct-nav:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+.para {
+  margin-left: 15%;
+  margin-top: -2%;
+  margin-bottom: 10% !important;
+}
+
+/* banner */
+
+.banners {
+  height: 40vh;
+  margin-top: 2%;
+  position: relative;
+  margin-left: 1%;
+}
+.banners-div {
+  position: absolute;
+}
+.banners-div img {
+  width: 97vw;
+  height: 40vh;
+}
+.banner-btn {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.banner-btn button {
+  padding: 30px 14px;
+}
+.btn1 {
+  margin-right: 93.8%;
+}
+
+/* fashion  */
+.fashionProduct {
+  height: 50vh;
+  margin-top: 2%;
+  background-color: white;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+h1 {
+  position: absolute;
+  font-size: 2rem;
+  margin-top: 1.6%;
+  margin-left: 6%;
+}
+.fashionProduct-nav {
+  width: 14vw;
+  height: 36vh;
+  margin-top: 5.5%;
+  margin-left: 4%;
+  cursor: pointer;
+}
+.fashionProduct-nav:hover p {
+  color: #2874f0;
+}
+.fashionProduct-nav:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+.fashionProduct-nav img {
+  width: 13vw;
+  height: 26vh;
+  border-radius: 7%;
+  margin-top: 5%;
+  margin-left: 14%;
+}
+.para {
+  margin-left: 15%;
+}
+
+.price {
+  margin-left: 18%;
+  text-align: center;
+}
+.price h5 {
+  color: #2874f0;
+}
+
+/* devices */
+
+.smartDevices,
+.electronicDevices,
+.furniture,
+.beautyProducts,
+.Appliances,
+.Shoes {
+  height: 50vh;
+  margin-top: 2%;
+  background-color: white;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+h1 {
+  position: absolute;
+  font-size: 2rem;
+  margin-top: 1.6%;
+  margin-left: 6%;
+}
+.smartdevicesProduct-nav,
+.electronicdevicesProduct-nav,
+.furnitureProduct-nav,
+.beautyProduct-nav,
+.appliancesProduct-nav,
+.shoesProduct-nav {
+  width: 14vw;
+  height: 35vh;
+  margin-top: 5.5%;
+  margin-left: 4%;
+  cursor: pointer;
+}
+.smartdevicesProduct-nav:hover p {
+  color: #2874f0;
+}
+.smartdevicesProduct-nav:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+.smartdevicesProduct-nav img,
+.electronicdevicesProduct-nav img,
+.furnitureProduct-nav img,
+.beautyProduct-nav img,
+.appliancesProduct-nav img,
+.shoesProduct-nav img {
+  width: 13vw;
+  height: 26vh;
+  border-radius: 7%;
+  margin-top: 5%;
+  margin-left: 14%;
+}
+
+/* furniture */
+
+.furnitureProduct-nav:hover p {
+  color: #2874f0;
+}
+.furnitureProduct-nav:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+/* electronics */
+
+.electronicdevicesProduct-nav:hover p {
+  color: #2874f0;
+}
+.electronicdevicesProduct-nav:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+/* beauty products */
+
+.beautyProduct-nav:hover p {
+  color: #2874f0;
+}
+.beautyProduct-nav:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+/* appliances */
+
+.appliancesProduct-nav:hover p {
+  color: #2874f0;
+}
+.appliancesProduct-nav:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+.app img {
+  width: 45%;
+  margin-left: 30%;
+}
+
+/* shoes */
+
+.shoesProduct-nav:hover p {
+  color: #2874f0;
+}
+.shoesProduct-nav:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+/* footer */
+.footer-f {
+  margin-top: 1.5%;
+  background-color: black;
+  min-height: 40vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.abouts {
+  width: 20%;
+  color: white;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+.abouts ul {
+  list-style: none;
+}
+.abouts ul li {
+  position: relative;
+  font-size: 0.9rem;
+}
+.abouts h6 {
+  font-size: 1rem;
+  margin-bottom: 3%;
+  color: rgb(137, 132, 132);
+}
+.mg {
+  margin-left: -7%;
+}
+.mg1 {
+  margin-right: 2.5%;
+}
+.mg2 {
+  margin-left: 1%;
+}
+.line {
+  position: absolute;
+  width: 0.1%;
+  height: 55%;
+  background-color: rgb(104, 100, 100);
+  margin-left: 55%;
+  margin-top: 3%;
+}
+.line2 {
+  position: absolute;
+  height: 0.1%;
+  width: 100%;
+  margin-top: 15%;
+  background-color: rgb(104, 100, 100);
+}
+.copyright p {
+  position: absolute;
+  margin-top: 17%;
+  width: 30%;
+  color: white;
+  margin-left: -60%;
+}
